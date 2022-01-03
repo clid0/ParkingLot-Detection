@@ -29,29 +29,28 @@
               //  showReview();
             });
 
-            function makeReview() {
+            function login() {
                 let email = $('#email').val()
                 let password = $('#password').val()
                 // let review = $('#bookReview').val()
 
-                let flag = false
+                let msg = "로그인"
                 $.ajax({
                     type: "POST",
                     url: "/check",
                     data: {email_give:email, password_give:password},
                     success: function (response) {
                         if (response){
-                            flag = true
-                        }else{
-                            flag=false
-                        }
-                        if (response["msg"]=='로그인!'){
-
-                            window.open(response['name'])
-                        }else{
                             alert(response["msg"]);
                             window.location.reload();
+                        }else{
+                            alert("로그인")
+                            window.location.reload();
                         }
+                            //
+                            // alert(response["msg"]);
+                            // window.location.reload();
+
 
                     }
                 })
@@ -113,31 +112,12 @@
                     </div>
                     <input type="password" class="form-control" id="password">
                 </div>
-<!--                <div class="input-group mb-3">-->
-<!--                    <div class="input-group-prepend">-->
-<!--                        <span class="input-group-text">리뷰</span>-->
-<!--                    </div>-->
-<!--                    <textarea class="form-control" id="bookReview"-->
-<!--                              cols="30"-->
-<!--                              rows="5" placeholder="140자까지 입력할 수 있습니다."></textarea>-->
-<!--                </div>-->
+
                 <div class="review">
-                    <button onclick="makeReview()" type="button" class="btn btn-primary">로그인</button>
+                    <button onclick="login()" type="button" class="btn btn-primary">로그인</button>
                 </div>
             </div>
-<!--            <div class="reviews">-->
-<!--                <table class="table">-->
-<!--                    <thead>-->
-<!--                    <tr>-->
-<!--                        <th scope="col">제목</th>-->
-<!--                        <th scope="col">저자</th>-->
-<!--                        <th scope="col">리뷰</th>-->
-<!--                    </tr>-->
-<!--                    </thead>-->
-<!--                    <tbody id="reviews-box">-->
-<!--                    </tbody>-->
-<!--                </table>-->
-<!--            </div>-->
+
         </div>
     </body>
 

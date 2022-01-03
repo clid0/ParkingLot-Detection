@@ -13,6 +13,35 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
                 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
                 crossorigin="anonymous"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+        <script type="text/javascript">
+            function logout() {
+                $.ajax({
+                    type: "get",
+                    url: "/logout",
+                    data: {},
+                    success: function (response) {
+                        alert(response["msg"])
+                        window.location.reload();
+                        }
+                })
+            }
+        </script>
+
+
 <script>
     var now_lat = 37.56682
     var now_lng = 126.97865
@@ -64,10 +93,11 @@
 
 </head>
 <body>
-
+<button onclick="logout()" type="button" class="btn btn-primary">로그아웃</button>
  <p id="data"></p>
  <div id="map" style="width: 100%; height: 100vh"></div>
-     <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6c2058586fc5afaffda57df000cf50cb&libraries=clusterer"></script>
+<!--     <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=c1160a94bfa97c8af8c89b846dbaa57a&libraries=clusterer"></script>-->
+ <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6c2058586fc5afaffda57df000cf50cb&libraries=clusterer"></script>
 <script>
      var mapContainer = document.getElementById("map"), // 지도를 표시할 div
         mapOption = {
@@ -144,16 +174,21 @@
 
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
-
-        var iwContent =
+        if (parseInt(ls2[i]['max_car']) < parseInt(ls2[i]['limit_car'])){
+            var iwContent =
           '<div style="padding:5px;width : 200px;color:blue;">' +
             '<div id = "name">'+ls2[i]['zone_name']+'</div>'
-          //  +
-          // "현재 차량 수 : " +
-          // ls2[i]['max_car'] ;
-          //
+        +
+            '<div style="color: green;">현재 차량 수 : '+ls2[i]['max_car']+' / '+ls2[i]['limit_car']+'</div>';
+
+        }else{
+            var iwContent =
+          '<div style="padding:5px;width : 200px;color:blue;">' +
+            '<div id = "name">'+ls2[i]['zone_name']+'</div>'
         +
             '<div style="color: red;">현재 차량 수 : '+ls2[i]['max_car']+' / '+ls2[i]['limit_car']+'</div>';
+        }
+
 
 
 
