@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+        <!-- Webpage Title -->
+        <title>
+            Team DI</title>
+        <link rel="shortcut icon" type="image/x-icon" href="../static/teamdi_logo.png">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+
+        <!-- 구글폰트 -->
+        <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+              //  showReview();
+            });
+
+            function makeReview() {
+                let email = $('#email').val()
+                let password = $('#password').val()
+                // let review = $('#bookReview').val()
+
+                let flag = false
+                $.ajax({
+                    type: "POST",
+                    url: "/check",
+                    data: {email_give:email, password_give:password},
+                    success: function (response) {
+                        if (response){
+                            flag = true
+                        }else{
+                            flag=false
+                        }
+                        if (response["msg"]=='로그인!'){
+
+                            window.open(response['name'])
+                        }else{
+                            alert(response["msg"]);
+                            window.location.reload();
+                        }
+
+                    }
+                })
+            }
+        </script>
+
+        <style type="text/css">
+            * {
+                font-family: "Do Hyeon", sans-serif;
+            }
+
+            h1,
+            h5 {
+                display: inline;
+            }
+
+            .info {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .review {
+                text-align: center;
+            }
+
+            .reviews {
+                margin-top: 100px;
+            }
+            .container{
+                width: 800px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+<!--            <img src="https://previews.123rf.com/images/maxxyustas/maxxyustas1511/maxxyustas151100002/47858355-education-concept-books-and-textbooks-on-the-bookshelf-3d.jpg"-->
+<!--                 class="img-fluid" alt="Responsive image">-->
+            <img src="../static/logo.png"
+                 class="img-fluid" alt="Responsive image">
+            <div class="info">
+                <h1 style="color:blue">쏘카 x Team DI<br></h1>
+                <br>
+                <h2>더 이상 빈 주차 공간을 찾아 헤매지 마세요.<br>
+내 쏘카 주차가 필요할 때, 언제 어디서나 꼭꼭 숨은 주차장 빈 공간 알려드립니다.<br></h2>
+                <h3>딥러닝을 이용한 빈 주차장 찾기<br><br>
+* 주차장 위치를 손쉽게 확인<br>
+* 실시간 쏘카존 정보를 한눈에 확인</h3>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">e-mail</span>
+                    </div>
+                    <input type="text" class="form-control" id="email">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">password</span>
+                    </div>
+                    <input type="password" class="form-control" id="password">
+                </div>
+<!--                <div class="input-group mb-3">-->
+<!--                    <div class="input-group-prepend">-->
+<!--                        <span class="input-group-text">리뷰</span>-->
+<!--                    </div>-->
+<!--                    <textarea class="form-control" id="bookReview"-->
+<!--                              cols="30"-->
+<!--                              rows="5" placeholder="140자까지 입력할 수 있습니다."></textarea>-->
+<!--                </div>-->
+                <div class="review">
+                    <button onclick="makeReview()" type="button" class="btn btn-primary">로그인</button>
+                </div>
+            </div>
+<!--            <div class="reviews">-->
+<!--                <table class="table">-->
+<!--                    <thead>-->
+<!--                    <tr>-->
+<!--                        <th scope="col">제목</th>-->
+<!--                        <th scope="col">저자</th>-->
+<!--                        <th scope="col">리뷰</th>-->
+<!--                    </tr>-->
+<!--                    </thead>-->
+<!--                    <tbody id="reviews-box">-->
+<!--                    </tbody>-->
+<!--                </table>-->
+<!--            </div>-->
+        </div>
+    </body>
+
+</html>
