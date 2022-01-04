@@ -3,7 +3,7 @@ from flask import Flask, render_template, jsonify, request, redirect, url_for, s
 
 app = Flask(__name__)
 
-client = MongoClient('mongodb://test:test@3.141.15.72', 27017)
+client = MongoClient('mongodb://secret', 27017)
 # client = MongoClient('localhost', 27017)
 db = client.dbteamdi
 
