@@ -7,7 +7,7 @@
                 <link rel="shortcut icon" type="image/x-icon" href="../static/teamdi_logo.png">
     <meta property="og:title" content="Team DI" />
 <meta property="og:description" content="Team DI 쏘카존 Project" />
-<meta property="og:image" content="{{ url_for('static', filename='m_icon.jpg') }}" />
+<meta property="og:image" content="{{ url_for('static', filename='logo.png') }}" />
 
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -58,15 +58,9 @@
                         let img_url = response['img_url']
                         if (img_url != "없습니다"){
                             window.open(img_url)
-                            // window.location.reload();
-                            // console.log(name1)
-                            // openImg.reset();
-
                         }else{
-                            alert("이미지 정보가 없습니다.");
-                            // console.log(name1)
-                            // window.location.reload();
-                            // openImg.reset();
+                            alert("해커톤 과제로 '충정로 역' 근처만 이미지가 존재합니다.");
+
                         }
 
                     }
@@ -131,19 +125,10 @@
         fetch(url)
             .then(res => res.json())
         .then(myJson => {
-            // document.getElementById('data').innerText = JSON.stringify(myJson,null,1);
-            //원본
-            // ls1 = JSON.stringify(myJson,null,1)
-            // //console.log(ls1.count)
-            // ls2 = myJson.list //리스트의 모든 것
-            // console.log(ls2)
-            // console.log(ls2[0]['unitName'])
 
             ls1 = JSON.stringify(myJson,null,1)
-            // console.log(ls1)
             ls2 = myJson.list //리스트의 모든 것
-            // console.log(ls2)
-            console.log(ls2[0]['zone_name'])
+
 
 
              var imageSrc =
@@ -192,17 +177,6 @@
 
 
 
-          // '<br><a onclick="openImg()" style="color:blue" target="_blank">이미지</a> ' +
-          // '<br><a onclick="openImg()" style="color:blue" target="_blank">이미지</a> ' +
-          //   '<br><button id = "data" onclick="openImg()" value="22323" >이미지</button>'+
-          //   '<br><a href="https://map.kakao.com/link/map/' +
-          // lat +
-          // "," +
-          // lng +
-          // '" style="color:blue" target="_blank">카카오 지도</a></div>';
-            // '<a onclick="refresh(lat,lng)" style="color:blue" target="_blank">새로고침</a></div>';
-
-
         //iwPosition = new kakao.maps.LatLng(37.56682, 126.97865); //인포윈도우 표시 위치입니다
 
         // 인포윈도우를 생성합니다
@@ -239,16 +213,6 @@
         infoflag = false
         kakao.maps.event.addListener(marker, "click", function () {
             openImg();
-            // if (infoflag) {
-            //     infoWindow.open(map, marker);
-            //     infoflag = true
-            // }else{
-            //     infoWindow.close(map, marker);
-            //     infoflag = false
-            //     // console.log(infowindow.isConnected)
-            // }
-            //
-            // // infowindow.open(map,marker);
 
         });
       }

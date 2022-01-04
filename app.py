@@ -50,7 +50,8 @@ def check():
 
         if a['email'] == email_receive and a['password'] == password_receive:
             session["userID"] = email_receive
-            return redirect(url_for("map"))
+            # return redirect(url_for("map"))
+            return render_template('map.html')
         else:
             return jsonify({'msg': '패스워드 틀림!'})
     else:
@@ -98,9 +99,7 @@ def open_img():
 
         img_url = '../static/' + zone_name + '/detected.jpg'  # 여기가 핵심임.
         return jsonify({"img_url": img_url})
-            # os.mkdir('./static/' + zone_name)
-            # img_url = '../static/' + zone_name + '/detected.jpg'  # 여기가 핵심임.
-            # return jsonify({"img_url": img_url})
+
     else:
         return jsonify({"img_url": "없습니다"})
 

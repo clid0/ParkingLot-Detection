@@ -8,6 +8,10 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/x-icon" href="../static/teamdi_logo.png">
+    <meta property="og:title" content="Team DI" />
+<meta property="og:description" content="Team DI 쏘카존 Project" />
+<meta property="og:image" content="{{ url_for('static', filename='logo.png') }}" />
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -40,12 +44,16 @@
                     url: "/check",
                     data: {email_give:email, password_give:password},
                     success: function (response) {
-                        if (response){
+                        if (response[0]!= '<'){
+                            console.log(response)
                             alert(response["msg"]);
                             window.location.reload();
+
                         }else{
-                            alert("로그인")
+
+                            alert("Welcome "+email + "");
                             window.location.reload();
+
                         }
                             //
                             // alert(response["msg"]);
@@ -80,7 +88,11 @@
                 margin-top: 100px;
             }
             .container{
-                width: 800px;
+                width: 1000px;
+            }
+            #emailBox, #passBox{
+                width : 500px;
+                margin: auto;
             }
         </style>
     </head>
@@ -90,24 +102,24 @@
         <div class="container">
 <!--            <img src="https://previews.123rf.com/images/maxxyustas/maxxyustas1511/maxxyustas151100002/47858355-education-concept-books-and-textbooks-on-the-bookshelf-3d.jpg"-->
 <!--                 class="img-fluid" alt="Responsive image">-->
-            <img src="../static/logo.png"
+            <img src="../static/back.png"
                  class="img-fluid" alt="Responsive image">
             <div class="info">
-                <h1 style="color:blue">쏘카 x Team DI<br></h1>
-                <br>
-                <h2>더 이상 빈 주차 공간을 찾아 헤매지 마세요.<br>
-내 쏘카 주차가 필요할 때, 언제 어디서나 꼭꼭 숨은 주차장 빈 공간 알려드립니다.<br></h2>
-                <h3>딥러닝을 이용한 빈 주차장 찾기<br><br>
-* 주차장 위치를 손쉽게 확인<br>
-* 실시간 쏘카존 정보를 한눈에 확인</h3>
-                <div class="input-group mb-3">
+<!--                <h1 style="color:blue">쏘카 x Team DI<br></h1>-->
+<!--                <br>-->
+<!--                <h2>더 이상 빈 주차 공간을 찾아 헤매지 마세요.<br>-->
+<!--내 쏘카 주차가 필요할 때, 언제 어디서나 꼭꼭 숨은 주차장 빈 공간 알려드립니다.<br></h2>-->
+<!--                <h3>딥러닝을 이용한 빈 주차장 찾기<br><br>-->
+<!--* 주차장 위치를 손쉽게 확인<br>-->
+<!--* 실시간 쏘카존 정보를 한눈에 확인</h3>-->
+                <div class="input-group mb-3" id = 'emailBox'>
                     <div class="input-group-prepend">
                         <span class="input-group-text">e-mail</span>
                     </div>
                     <input type="text" class="form-control" id="email">
                 </div>
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
+                <div class="input-group mb-3" id="passBox">
+                    <div class="input-group-prepend" >
                         <span class="input-group-text">password</span>
                     </div>
                     <input type="password" class="form-control" id="password">
