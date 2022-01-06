@@ -1,6 +1,6 @@
 # import csv
 from pymongo import MongoClient
-client = MongoClient('mongodb://test:test@3.129.66.108', 27017)
+client = MongoClient('mongodb://test:test@3.141.15.72', 27017)
 # client = MongoClient('localhost', 27017)
 
 # ### socarzone insert datas
@@ -29,8 +29,8 @@ client = MongoClient('mongodb://test:test@3.129.66.108', 27017)
 db = client.dbteamdi
 
 dic = {
-    "email": "abcd@naver.com",
-    "password": "123",
+    "email": "1",
+    "password": "2",
     "name": "홍길동"
 }
 db.clients.insert_one(dic)
