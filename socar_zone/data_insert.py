@@ -5,7 +5,7 @@ client = MongoClient('mongodb://test:test@3.141.15.72', 27017)
 
 ### socarzone insert datas
 db = client.dbteamdi
-f = open('zone_info.csv', 'r', encoding='utf-8')
+f = open('../zone_info.csv', 'r', encoding='utf-8')
 rdr = csv.reader(f)
 rdr = list(rdr)
 name = rdr[0][1]

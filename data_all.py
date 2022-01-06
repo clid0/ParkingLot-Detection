@@ -1,6 +1,6 @@
 import csv
 from pymongo import MongoClient
-client = MongoClient('mongodb://test:test@3.141.15.72', 27017)  # 내컴퓨터에서 몽고 디비 씀
+client = MongoClient('mongodb://test:test@3.141.15.72', 27017)
 
 
 # ### socarzone insert datas
