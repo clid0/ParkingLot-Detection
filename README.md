@@ -223,7 +223,7 @@
      - Microsoft COCO 2017 Dataset 데이터 10,000장의 person 데이터를 학습
 - 결과
           <p align="left">
-          <img width="60%" height="60%" src="https://user-images.githubusercontent.com/19771164/148534237-e2444a17-4cc6-4003-b0ea-0a840ec4de69.png" alt="Sublime's custom image"/>
+          <img width="60%" height="60%" src="https://user-images.githubusercontent.com/19771164/148554241-a2c9ea50-f59a-4afc-b941-de3be005979e.gif" alt="Sublime's custom image"/>
           </p>
 <br>
 
