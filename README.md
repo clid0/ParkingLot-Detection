@@ -304,3 +304,7 @@ source_path = '/content/drive/MyDrive/socar_zones/'+z_name+'/'
        - clients : clients DB  
        - socar_zone : socar_zone DB  
        - DB : Mongo  
+
+
+# 상세한 내용을 알기 원하신 분은 노션을 참조하시길 바랍니다.
+**[Team DI](https://lake-freeze-c95.notion.site/43b685385f8447da912f412bc3ba4447)**
