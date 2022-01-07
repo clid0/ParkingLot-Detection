@@ -218,17 +218,16 @@
 
 - COCO + augmentation COCO
     - 결과
-        
-        Yolov5와 비교하는 도표
-   |![car_detect.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f12336a-186a-41cc-9021-59c9991ac501/car_detect.png)|
-   |:--:|
-   |Yolov5와 비교하는 도표|
+ 
+|![car_detect.png](https://user-images.githubusercontent.com/54520828/148558785-b10ab4fd-075b-4a8f-afed-02ecfa60004a.png)|
+|:--:|
+|Yolov5와 비교하는 도표-->민기님 이게 맞나요? 이미지가 깨져서 흐름상 이 이미지로 가져왔는데 확인 부탁드려요!|
  
 ### 4차 시도 결과 및 피드백
 
 - ‘car’만 12,000장 학습한 모델과 해당 데이터를 augmentation한 모델을 앙상블했을 때 결과가 상당히 좋음
 - 차의 갯수가 확인이 되면 빈 자리의 여부도 알려줄 수 있음
-     - 빈자리 수 - 전체 자리 수 - 차의 갯수
+     - 빈자리 수 = 전체 자리 수 - 차의 갯수
 <br>
 
 ## 확장성을 위한 추가 기능들
@@ -239,17 +238,21 @@
 - 학습
      - Microsoft COCO 2017 Dataset 데이터 10,000장의 person 데이터를 학습
 - 결과
-          <p align="left">
-          <img width="60%" height="60%" src="https://user-images.githubusercontent.com/19771164/148554241-a2c9ea50-f59a-4afc-b941-de3be005979e.gif" alt="Sublime's custom image"/>
-          </p>
+
+|![car_detect.png](https://user-images.githubusercontent.com/19771164/148554241-a2c9ea50-f59a-4afc-b941-de3be005979e.gif)|
+|:--:|
+|Person Detection and Blur: 데이터는 동반신기의 미로틱 무대|
+
 <br>
 
 ### Time(정확성)
 - 주차장의 사진이 어느 시점에 찍혔는지 알아야 사용자가 정확한 주차 가능 여부를 파악할 수 있음
 - 사진 위에 detect 시점의 시간 정보를 추가
-          - <p align="left">
-          <img width="60%" height="60%" src="https://user-images.githubusercontent.com/19771164/148534298-58374ffa-2dda-4a22-8bd0-b949d9e7e55a.jpg" alt="Sublime's custom image"/>
-          </p>
+
+|![car_detect.png](https://user-images.githubusercontent.com/19771164/148534298-58374ffa-2dda-4a22-8bd0-b949d9e7e55a.jpg)|
+|:--:|
+|이미지 좌측 상단에서 시간과 남아있는 자리를 알 수 있음|
+
 
 ---
 <br><br>
@@ -257,9 +260,10 @@
 
 ### 웹사이트 구조
 - 실질적인 사용자 경험 개선을 위해서 우리가 찾은 주차 공간을 알리고자 웹사이트를 구현
-          <p align="left">
-          <img width="55%" height="55%" src="https://user-images.githubusercontent.com/19771164/148534847-c80c57de-382f-484c-b3cb-40e6443043b9.png" alt="Sublime's custom image"/>
-          </p>
+
+|![car_detect.png](https://user-images.githubusercontent.com/19771164/148534847-c80c57de-382f-484c-b3cb-40e6443043b9.png)|
+|:--:|
+|TEAM DI 웹서비스 사이트 구조|
     
    
         
@@ -278,9 +282,10 @@
 - 공식 id / 공식 비밀번호  
 abcd@naver.com / 123
 - Client 사용 방법
-          <p align="center">
-  <img width="100%" height="100%" src="https://user-images.githubusercontent.com/19771164/148516059-91da5206-12af-45cb-9737-20854d1df2bb.gif" alt="Sublime's custom image"/>
-</p>
+
+|![car_detect.png](https://user-images.githubusercontent.com/19771164/148516059-91da5206-12af-45cb-9737-20854d1df2bb.gif)|
+|:--:|
+|TEAM DI 결과물 사용 영상|
 
 - 데이터 넣는 방법
 
