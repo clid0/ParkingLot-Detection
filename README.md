@@ -147,16 +147,23 @@
       - 2015/11/13 - 2015/11/29 train데이터 (371장)  
         2015/12/01 - 2015/12/05 valid데이터(38장)  
         2016/01/14 - 2016/01/16 test데이터(40장)
-     - 8번 카메라 결과<p align="left">
-          <img width="100%" height="70%" src="https://user-images.githubusercontent.com/19771164/148529713-ad85bfe6-56db-4eb8-9dc2-6c0f75096d3b.png" alt="Sublime's custom image"/>
-          </p>
-     - 9번 카메라 데이터
-          - 2015/11/13 - 2015/11/29 train데이터 (407장)  
-2015/12/01 - 2015/12/05 valid데이터(43장)  
-2016/01/14 - 2016/01/16 test데이터(40장)
-     - 9번 카메라 결과<p align="left">
-          <img width="100%" height="70%" src="https://user-images.githubusercontent.com/19771164/148529727-5090282c-4795-42c0-a707-974a80a7a89e.png" alt="Sublime's custom image"/>
-          </p>
+     - 8번 카메라 결과
+
+|![cam8_result](https://user-images.githubusercontent.com/54520828/148556087-15f77be8-38a8-4a5c-958c-a5e256d38fea.png)|
+|:--:|
+|왼쪽: 모델 적용 전 & 오른쪽: 모델 적용 후|
+
+   - 9번 카메라 데이터
+      - 2015/11/13 - 2015/11/29 train데이터 (407장)  
+        2015/12/01 - 2015/12/05 valid데이터(43장)  
+        2016/01/14 - 2016/01/16 test데이터(40장)
+     - 9번 카메라 결과
+
+|![cam9_result](https://user-images.githubusercontent.com/19771164/148529727-5090282c-4795-42c0-a707-974a80a7a89e.png)|
+|:--:|
+|왼쪽: 모델 적용 전 & 오른쪽: 모델 적용 후|
+
+
         
 ### 2차 시도의 결론 및 피드백
 
