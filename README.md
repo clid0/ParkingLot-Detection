@@ -154,4 +154,6 @@
         LabelImg 프로그램을 이용한 Yolov5 라벨링 예시
        
 ![1](https://user-images.githubusercontent.com/19771164/148508934-81b61491-210c-4c7b-9398-e1ce54868ea2.png)
+![2](https://user-images.githubusercontent.com/19771164/148509186-b5af26e8-a6c2-4cdd-9219-f227ef7832ae.png)
+
 
