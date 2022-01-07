@@ -159,7 +159,7 @@
         2016/01/14 - 2016/01/16 test데이터(40장)
      - 9번 카메라 결과
 
-|![cam9_result](https://user-images.githubusercontent.com/19771164/148529727-5090282c-4795-42c0-a707-974a80a7a89e.png)|
+|![cam9_result](https://user-images.githubusercontent.com/54520828/148556729-7f54fe7d-6a26-4854-8467-ea37bf63d460.png)|
 |:--:|
 |왼쪽: 모델 적용 전 & 오른쪽: 모델 적용 후|
 
@@ -169,18 +169,16 @@
 
 1. 한 주차장을 잘 학습한다면 해당 주차장의 다른 시간대에서 충분히 좋은 결과를 낼 수 있음
 2. 비슷한 각도라고 판단되는 8번 카메라 모델로 다른 주차장에서 아쉬운 결과를 보이는데,   차와 빈 자리를 논리적으로 찾는 것이 아니라 라벨링 되어있는 그 부분의 **지형지물**을 학습하는 것으로 보임.   차량의 방향도 중요하지만 그 주차장 고유의 상황이 더 중요함
-    - 8번 카메라 모델로 다른 test 결과
-    
-    <p align="left">
-          <img width="70%" height="70%" src="https://user-images.githubusercontent.com/19771164/148531446-74dea4b5-4698-4046-a6cb-46cd63289fc1.png" alt="Sublime's custom image"/>
-          </p>
-    
-
-    
 3. 그렇다면 데이터가 많이 부족한 상황에서 **어떤 기법**을 사용하는 것이 좋을까?
+    
+|![8번카메라_testinference](https://user-images.githubusercontent.com/19771164/148531446-74dea4b5-4698-4046-a6cb-46cd63289fc1.png)|
+|:--:|
+|8번 카메라에서 나온 데이터를 학습한 모델로 다른 주차장 예시에서의 inference|
+    
         
- ---  
-<br><br>
+ --- 
+ <br>
+ 
 ## 3차 시도(데이터 최적화)
 
 데이터가 부족한 상황, 우린 어떻게 대처할 수 있을까?
