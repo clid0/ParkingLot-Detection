@@ -152,3 +152,6 @@
         ![LabelImg 프로그램을 이용한 Yolov5 라벨링 예시](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a2e652fa-e98e-4552-9776-6c41e418cb00/라벨링.jpg)
         
         LabelImg 프로그램을 이용한 Yolov5 라벨링 예시
+       
+![1](https://user-images.githubusercontent.com/19771164/148508934-81b61491-210c-4c7b-9398-e1ce54868ea2.png)
+
