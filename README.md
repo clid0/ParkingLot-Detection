@@ -114,18 +114,20 @@
 - CNR park
     - 총 9개의 카메라로 한 주차장의 이미지를 수집한 데이터
     - 각 카메라는 다른 각도를 가지고 있기 때문에, 각 카메라 별로 따로 학습을 시켜주어 테스트 진행
-    - 예시
-        
-        <p align="left">
-          <img width="70%" height="70%" src="https://user-images.githubusercontent.com/19771164/148528862-8b403995-561c-43dc-9a24-ea564690e080.png" alt="Sublime's custom image"/>
-          </p>
+    - 아래 이미지: CNR Park 데이터 예시
+
+|![cnr8_ex](https://user-images.githubusercontent.com/54520828/148553485-7451cb47-de90-4b13-9472-f42e430382df.jpg)|![cnr2_ex](https://user-images.githubusercontent.com/54520828/148553494-c4c2ed6e-b77b-4669-bbd8-7a769e35b206.jpg)| 
+|:--:|:--:|
+|8번 카메라에서 찍은 주차장|2번 카메라에서 찍은 주차장|
+
         
 - 데이터 라벨링
     - 1차 시도에서 사용한 PKLot 데이터 라벨링 방식을 바탕으로 일관된 라벨링을 진행
     - [LabelImg](https://github.com/tzutalin/labelImg)을 (PASCAL VOC format, Yolov5 format 등을 지원)을 이용
-    - <p align="left">
-          <img width="70%" height="70%" src="https://user-images.githubusercontent.com/19771164/148529084-24b532e1-e4ee-4b04-9174-770ff7f17eaf.jpg" alt="Sublime's custom image"/>
-          </p>
+
+    |![cnr8_ex](https://user-images.githubusercontent.com/19771164/148529084-24b532e1-e4ee-4b04-9174-770ff7f17eaf.jpg)|
+    |:--:|
+    |이미지 라벨링 LabelImg 프로그램|
 - 학습
      - 2번 카메라 
       
@@ -135,13 +137,16 @@
           - 2015/11/13 - 2015/11/29 train데이터 (260장)  
 2015/12/01 - 2015/12/05 valid데이터(43장)  
 2016/01/14 - 2016/01/16 test데이터(43장)
-     - 2번 카메라 결과<p align="left">
-          <img width="100%" height="70%" src="https://user-images.githubusercontent.com/19771164/148529709-ffe6a05a-6dbb-4330-8814-84009e4fedb0.png" alt="Sublime's custom image"/>
-          </p>
-     - 8번 카메라 데이터
-          - 2015/11/13 - 2015/11/29 train데이터 (371장)  
-2015/12/01 - 2015/12/05 valid데이터(38장)  
-2016/01/14 - 2016/01/16 test데이터(40장)
+     - 2번 카메라 결과
+
+|![cam2_result](https://user-images.githubusercontent.com/54520828/148554652-698f60f0-1e7a-4878-bb3c-44cff4ad46e5.png)|
+|:--:|
+|왼쪽: 모델 적용 전 & 오른쪽: 모델 적용 후|
+
+   - 8번 카메라 데이터
+      - 2015/11/13 - 2015/11/29 train데이터 (371장)  
+        2015/12/01 - 2015/12/05 valid데이터(38장)  
+        2016/01/14 - 2016/01/16 test데이터(40장)
      - 8번 카메라 결과<p align="left">
           <img width="100%" height="70%" src="https://user-images.githubusercontent.com/19771164/148529713-ad85bfe6-56db-4eb8-9dc2-6c0f75096d3b.png" alt="Sublime's custom image"/>
           </p>
