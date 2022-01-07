@@ -99,13 +99,8 @@
   
 |![PKlot이미지.jpg](https://user-images.githubusercontent.com/19771164/148506977-39bdaf18-35e7-463a-b6ff-c59d9abb62fd.png)| 
 |:--:|
-|*1차 학습 모델를 이용한 다른 주차장 이미지에서의 inference*|
-
-     <p align="left">
-       <img width="50%" height="50%" src="https://user-images.githubusercontent.com/19771164/148506977-39bdaf18-35e7-463a-b6ff-c59d9abb62fd.png" alt="Sublime's custom image"/>
-     <em>image_caption</em>
-     </p>
-    위 사진은 PKLot 학습과 비슷한 주차장, 아래 사진은 상이한 주차장
+|*1차 학습 모델를 이용한 다른 주차장 이미지에서의 inference 
+위: PKLot 학습과 비슷한 주차장 아래: 사진은 상이한 주차장|
 
 4. 카메라 각도가 비슷한 사진들은 80%까지 detect 하는 것을 보니 **카메라 각도**가 중요한 feature이지 않을까?  
 
