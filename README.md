@@ -1,4 +1,4 @@
-       <p align="center">
+<p align="center">
   <img src="https://user-images.githubusercontent.com/19771164/148502115-a99d69d5-c5ae-4d3b-be4c-88e2a8014fe9.png" alt="Sublime's custom image"/>
 </p>
 
@@ -269,4 +269,38 @@ abcd@naver.com / 123
           <p align="center">
   <img width="100%" height="100%" src="https://user-images.githubusercontent.com/19771164/148516059-91da5206-12af-45cb-9737-20854d1df2bb.gif" alt="Sublime's custom image"/>
 </p>
+
 - 데이터 넣는 방법
+
+---
+<br><br>
+### 코드 예시
+[Yolov5](https://github.com/ultralytics/yolov5)를 기반으로 만들었으며 목적에 맞게 수정하였습니다.
+
+```python
+
+z_name = '한성대입구역 5번출구'
+source_path = '/content/drive/MyDrive/socar_zones/'+z_name+'/'
+!python detect_car.py --source '{source_path}' --zone_name '{z_name}' --conf 0.4 --weights /content/drive/MyDrive/models/COCO_car_20ep.pt /content/drive/MyDrive/models/person_detect.pt
+
+!python img_to_db.py '{z_name}'
+```
+
+- models  
+       - 2camera_260train.pt : 2번 카메라 모델  
+       - 8camera_350train.pt : 8번 카메라 모델  
+       - 9camera_350train.pt : 9번 카메라 모델  
+       - person_detect.pt : COCO 10,000장 사람 모델  
+       - car_20ep.pt : COCO 12,000장 차 모델  
+       - car_aug_20ep.pt : augmentation COCO 12,000장 차 모델  
+- blur  
+       - utils.plots.py
+- put DB  
+       - img_to_db.py
+- web  
+       - index.html : 메인 페이지  
+       - map.html : 지도 페이지  
+       - app.py : 서버  
+       - clients : clients DB  
+       - socar_zone : socar_zone DB  
+       - DB : Mongo  
