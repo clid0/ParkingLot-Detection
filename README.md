@@ -188,9 +188,14 @@
 - 데이터가 부족하니 data augmentation을 진행해보자
     - default 값에 적용되지 않는 방법들로 학습 진행(→image rotation, shear, mixup)
     - image rotation, shear, mixup의 기법을 사용한 결과, **같은 데이터셋**에서는 좋은 성능을 나타냄
-        <p align="left">
-          <img width="100%" height="70%" src="https://user-images.githubusercontent.com/19771164/148532040-cc581bd3-a2bb-4190-9b45-e555f723ac9c.png" alt="Sublime's custom image"/>
-          </p>
+
+|![3차_cnr_예시1_norotation](https://user-images.githubusercontent.com/54520828/148557420-7bbd6362-7af8-406a-a14e-f0222a575a9f.jpg)|![3차_cnr_예시1_rotation](https://user-images.githubusercontent.com/54520828/148557429-4d5a13dc-b096-4e64-91ea-ad7fc9f698e8.jpg)|
+|:--:|:--:|
+|예시1: rotation, shear, mixup 적용하지 않은 경우|예시1: rotation, shear, mixup 적용한 경우|
+|![3차_cnr_예시2_norotation](https://user-images.githubusercontent.com/54520828/148557434-85e4e200-a51e-4009-82da-01e8b0c1c805.jpg)|![3차_cnr_예시2_rotation](https://user-images.githubusercontent.com/54520828/148557440-2ee1a441-fa16-44ec-a902-4b0d025adb85.jpg)|
+|예시2: rotation, shear, mixup 적용하지 않은 경우|예시2: rotation, shear, mixup 적용한 경우|
+
+
 ### 3차 시도 결과 및 피드백
 
 - 데이터가 많지 않은 상황에서 image augmentation은 성능을 향상시킬 수 있는 중요한 기법으로 사용될 수 있음
@@ -198,7 +203,8 @@
 - 따라서, 하나의 모델을 사용하는 것은 많은 종류의 쏘카존을 보완해야하는 ‘확장성’의 문제에 부딪히게 된다.
 
 ---
-<br><br>
+<br>
+
 ## 4차 시도(확장성)
 
 ### 앙상블
@@ -214,8 +220,9 @@
     - 결과
         
         Yolov5와 비교하는 도표
-        
-        ![car_detect.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f12336a-186a-41cc-9021-59c9991ac501/car_detect.png)
+   |![car_detect.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f12336a-186a-41cc-9021-59c9991ac501/car_detect.png)|
+   |:--:|
+   |Yolov5와 비교하는 도표|
  
 ### 4차 시도 결과 및 피드백
 
