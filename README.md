@@ -33,8 +33,6 @@
 - ### 주차장 자체가 중요할 것이라 판단
 <br>
 
-  
-  
 
 ## 어떤 모델을 사용할까?  
 
@@ -42,12 +40,10 @@
 
 - 현재 Object detection에서 뛰어난 성능을 보이고 있는 Yolo v5를 pretrained model로 활용  
 
-- 각각 중요하다고 생각하는 요소에 맞춰 detect하도록 fine tuning  
+- 각각 중요하다고 생각하는 요소에 맞춰 detect하도록 fine tuning
 <p align="left">
   <img width="500" height="300" src="https://user-images.githubusercontent.com/19771164/148505749-88dab2d1-7871-4ce5-b999-add485a4cbdb.png" alt="Sublime's custom image"/>
 </p>
-
-
 
 ## 어떤 데이터를 사용할까?
 
@@ -61,18 +57,13 @@
   
 ---  
 <br><br>
-  
-  
-  
-
 ## 1차 시도(실외 vs 실내)
 
 ### 실내 주차장
 
-<p align="left">
-   
-  <img width="500" height="300" src="https://user-images.githubusercontent.com/19771164/148506256-470dfb1b-0229-4fe1-a433-0a4a8750f53c.jpg" alt="Sublime's custom image"/>
-</p>
+| ![실내주차장.jpg](https://user-images.githubusercontent.com/19771164/148506256-470dfb1b-0229-4fe1-a433-0a4a8750f53c.jpg) | 
+|:--:| 
+|__실내주차장 예시.jpg__|
    
 - 공개되어있는 실내 주차장 데이터셋을 찾을 수 없음
 - 모델을 돌릴 수 있을 정도의 양과 질의 데이터셋을 찾을 수 없음
@@ -85,14 +76,16 @@
     
     - Federal University of Parana에서 공개한 오픈 데이터로 자유로운 활용이 가능
     - Yolo에서 필요한 labels의 자료가 있어 잘할 수 있을 것이라 판단
-     <p align="left">
-       <img width="800" height="300" src="https://user-images.githubusercontent.com/19771164/148506281-70aab702-af54-4465-b46f-bdd7454c616a.png" alt="Sublime's custom image"/>
-     </p>
+
+ |![PKlot이미지.jpg](https://user-images.githubusercontent.com/19771164/148506281-70aab702-af54-4465-b46f-bdd7454c616a.png)| 
+ |:--:| 
+ |*PKLot 데이터 예시*|    
 
 - 학습 결과
-     <p align="left">
-       <img width="50%" height="50%" src="https://user-images.githubusercontent.com/19771164/148506719-c5d9d3f3-4175-47cc-b496-d6f5c8a52573.jpg" alt="Sublime's custom image"/>
-     </p>
+
+ |![PKlot이미지.jpg](https://user-images.githubusercontent.com/19771164/148506719-c5d9d3f3-4175-47cc-b496-d6f5c8a52573.jpg)| 
+ |:--:|
+ |*학습 결과: 1='car' class*|
 
 
 
@@ -103,8 +96,14 @@
 2. 라벨링을 일관되게 설정하는 것이 중요함을 알게 됨
 3. PKLot 데이터가 train이 8000장이지만 4000장씩 2개의 카메라만 존재해서 생각보다 빠른 시간(5epoch에서)내에 overfitting에 도달  
   따라서 다른 데이터에 적용되기 힘듬
+  
+|![PKlot이미지.jpg](https://user-images.githubusercontent.com/19771164/148506977-39bdaf18-35e7-463a-b6ff-c59d9abb62fd.png)| 
+|:--:|
+|*1차 학습 모델를 이용한 다른 주차장 이미지에서의 inference*|
+
      <p align="left">
        <img width="50%" height="50%" src="https://user-images.githubusercontent.com/19771164/148506977-39bdaf18-35e7-463a-b6ff-c59d9abb62fd.png" alt="Sublime's custom image"/>
+     <em>image_caption</em>
      </p>
     위 사진은 PKLot 학습과 비슷한 주차장, 아래 사진은 상이한 주차장
 
