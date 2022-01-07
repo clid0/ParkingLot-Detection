@@ -159,7 +159,7 @@
 
         // 마커가 지도 위에 표시되도록 설정합니다
         marker.setMap(map);
-        if (parseInt(ls2[i]['max_car']) < parseInt(ls2[i]['limit_car'])){
+        if (parseInt(ls2[i]['max_car']) >0){
             var iwContent =
           '<div style="padding:5px;width : 200px;color:blue;">' +
             '<div id = "name">'+ls2[i]['zone_name']+'</div>'
@@ -171,7 +171,7 @@
           '<div style="padding:5px;width : 200px;color:blue;">' +
             '<div id = "name">'+ls2[i]['zone_name']+'</div>'
         +
-            '<div style="color: red;">현재 차량 수 : '+ls2[i]['max_car']+' / '+ls2[i]['limit_car']+'</div>';
+            '<div style="color: red;">빈 자리 수 '+ls2[i]['max_car']+' / '+ls2[i]['limit_car']+'</div>';
         }
 
 
