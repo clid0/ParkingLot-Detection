@@ -81,8 +81,8 @@
 
 - [PKLot 데이터](https://public.roboflow.com/object-detection/pklot)
   - train데이터(8,691장)  
-valid데이터(2,483장)  
-test데이터(1,243장) 
+valid 데이터(2,483장)  
+test 데이터(1,243장) 
     
     - Federal University of Parana에서 공개한 오픈 데이터로 자유로운 활용이 가능
     - Yolo에서 필요한 labels의 자료가 있어 잘할 수 있을 것이라 판단
@@ -91,7 +91,7 @@ test데이터(1,243장)
  |:--:|
  |*PKLot 데이터 예시*|  
  
-- 학습 결과 ( epochs 20 / batches 32 )
+- 학습 결과 (epochs 20 / batches 32)
 
  |<img width="400px" height="400px" src="https://user-images.githubusercontent.com/19771164/148506719-c5d9d3f3-4175-47cc-b496-d6f5c8a52573.jpg" alt="Sublime's custom image"/>| 
  |:--:|
@@ -196,6 +196,10 @@ test데이터(1,243장)
 - 데이터가 부족하니 data augmentation을 진행해보자
     - Yolov5의 데이터 증강 기법 중 default 값에 적용되지 않는 방법들로 학습 진행(→image rotation, shear, mixup 등)
     - image rotation, shear, mixup의 기법을 사용한 결과, **같은 데이터셋**에서는 좋은 성능을 나타냄
+ 
+- 학습 데이터셋: CNR Park images from camera 9
+    - train: 데이터 수집의 첫 7일(Day1: 2015-11-21, Day7: 2015-12-3, 하루 평균 20장 업로드)
+    - valid: 데이터 수집의 8, 9일 째
 
 |![3차_cnr_예시1_norotation](https://user-images.githubusercontent.com/54520828/148557420-7bbd6362-7af8-406a-a14e-f0222a575a9f.jpg)|![3차_cnr_예시1_rotation](https://user-images.githubusercontent.com/54520828/148557429-4d5a13dc-b096-4e64-91ea-ad7fc9f698e8.jpg)|
 |:--:|:--:|
