@@ -300,13 +300,13 @@ test 데이터(1,243장)
 
 - 공식 id / 공식 비밀번호  
 abcd@naver.com / 123
-- Client 사용 방법
 
 |![car_detect.png](https://user-images.githubusercontent.com/19771164/148516059-91da5206-12af-45cb-9737-20854d1df2bb.gif)|
 |:--:|
-|TEAM DI 결과물 사용 영상|
+|Client 사용 영상|
+|![car_detect.png](https://user-images.githubusercontent.com/19771164/148644010-813db6fc-26c4-48c8-b538-ba3c87e31564.gif)|
+|TEAM DI 결과물 시연 영상|
 
-- 데이터 넣는 방법
 
 ---
 <br><br>
