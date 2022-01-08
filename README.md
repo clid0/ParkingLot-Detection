@@ -80,6 +80,9 @@
 ### 실외 주차장
 
 - [PKLot 데이터](https://public.roboflow.com/object-detection/pklot)
+  - train데이터(8,691장)  
+valid데이터(2,483장)  
+test데이터(1,243장) 
     
     - Federal University of Parana에서 공개한 오픈 데이터로 자유로운 활용이 가능
     - Yolo에서 필요한 labels의 자료가 있어 잘할 수 있을 것이라 판단
@@ -88,7 +91,7 @@
  |:--:|
  |*PKLot 데이터 예시*|  
  
-- 학습 결과
+- 학습 결과 ( epochs 20 / batches 32 )
 
  |<img width="400px" height="400px" src="https://user-images.githubusercontent.com/19771164/148506719-c5d9d3f3-4175-47cc-b496-d6f5c8a52573.jpg" alt="Sublime's custom image"/>| 
  |:--:|
@@ -142,7 +145,7 @@
           - 2015/11/13 - 2015/11/29 train데이터(260장)  
 2015/12/01 - 2015/12/05 valid데이터(43장)  
 2016/01/14 - 2016/01/16 test데이터(43장)
-     - 2번 카메라 결과
+     - 2번 카메라 결과 ( epochs 50 / batch 30 )
 
 |![cam2_result](https://user-images.githubusercontent.com/54520828/148554652-698f60f0-1e7a-4878-bb3c-44cff4ad46e5.png)|
 |:--:|
@@ -152,7 +155,7 @@
       - 2015/11/13 - 2015/11/29 train데이터(371장)  
         2015/12/01 - 2015/12/05 valid데이터(38장)  
         2016/01/14 - 2016/01/16 test데이터(40장)
-     - 8번 카메라 결과
+     - 8번 카메라 결과 ( epochs 50 / batch 30 )
 
 |![cam8_result](https://user-images.githubusercontent.com/54520828/148556087-15f77be8-38a8-4a5c-958c-a5e256d38fea.png)|
 |:--:|
@@ -162,7 +165,7 @@
       - 2015/11/13 - 2015/11/29 train데이터(407장)  
         2015/12/01 - 2015/12/05 valid데이터(43장)  
         2016/01/14 - 2016/01/16 test데이터(40장)
-     - 9번 카메라 결과
+     - 9번 카메라 결과 ( epochs 50 / batch 30 )
 
 |![cam9_result](https://user-images.githubusercontent.com/54520828/148556729-7f54fe7d-6a26-4854-8467-ea37bf63d460.png)|
 |:--:|
