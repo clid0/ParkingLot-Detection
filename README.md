@@ -350,6 +350,7 @@ source_path = '/content/drive/MyDrive/socar_zones/'+z_name+'/'
 [Yolov5](https://github.com/ultralytics/yolov5)
 [Data Augmentation hyperparameters 최적화](https://github.com/ultralytics/yolov5/issues/607)
 [CNR Park](http://cnrpark.it/)
+----------
 
 ### 상세한 내용을 알기 원하신 분은 notion을 참조하시길 바랍니다.
 **[Team DI](https://lake-freeze-c95.notion.site/43b685385f8447da912f412bc3ba4447)**  <= notion 주소
