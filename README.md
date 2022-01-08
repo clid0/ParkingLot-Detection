@@ -58,8 +58,8 @@
 - 문제는! 보안상 문제로 직접적으로 전달받을 수 있는 데이터셋이 없음  
 -> 팀원 모두가 라벨링을 수작업으로 진행하기로 결정
 - Dataset
-    - **[PKLlot Dataset]()**
-    - **[CNR Park]()**
+    - **[PKLot Dataset](https://public.roboflow.com/object-detection/pklot)**
+    - **[CNR Park](http://cnrpark.it/)**
     - **[Microsoft COCO 2017 Dataset](https://public.roboflow.com/object-detection/microsoft-coco-subset)**
   
 ---  
