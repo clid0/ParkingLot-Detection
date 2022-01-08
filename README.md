@@ -274,7 +274,7 @@
 ### 웹사이트 구조
 - 실질적인 사용자 경험 개선을 위해서 우리가 찾은 주차 공간을 알리고자 웹사이트를 구현
 
-|![car_detect.png](https://user-images.githubusercontent.com/19771164/148534847-c80c57de-382f-484c-b3cb-40e6443043b9.png)|
+|<img width="400px" height="400px" src="https://user-images.githubusercontent.com/19771164/148534847-c80c57de-382f-484c-b3cb-40e6443043b9.png" alt="Sublime's custom image"/>|
 |:--:|
 |TEAM DI 웹서비스 사이트 구조|
     
