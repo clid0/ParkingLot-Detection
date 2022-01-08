@@ -345,11 +345,12 @@ source_path = '/content/drive/MyDrive/socar_zones/'+z_name+'/'
        - app.py : 서버  
        - clients : clients DB  
        - socar_zone : socar_zone DB  
-       - DB : Mongo  
+       - DB : Mongo 
+--------
 ### 참조
-[Yolov5](https://github.com/ultralytics/yolov5)
-[Data Augmentation hyperparameters 최적화](https://github.com/ultralytics/yolov5/issues/607)
-[CNR Park](http://cnrpark.it/)
+- [Yolov5 github 링크](https://github.com/ultralytics/yolov5)
+- [Data Augmentation hyperparameters 최적화](https://github.com/ultralytics/yolov5/issues/607)
+- [CNR Park 데이터셋](http://cnrpark.it/)
 ----------
 
 ### 상세한 내용을 알기 원하신 분은 notion을 참조하시길 바랍니다.
