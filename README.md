@@ -225,11 +225,19 @@
 
 - COCO + augmentation COCO
     - 결과
- 
-|![car_detect.png](https://user-images.githubusercontent.com/54520828/148558785-b10ab4fd-075b-4a8f-afed-02ecfa60004a.png)|
-|:--:|
-|Yolov5와 비교하는 도표-->민기님 이게 맞나요? 이미지가 깨져서 흐름상 이 이미지로 가져왔는데 확인 부탁드려요!|
- 
+
+
+|![4차예시1_](https://user-images.githubusercontent.com/54520828/148635383-fc047ab4-7dc5-44d8-a505-7a749e97fb14.jpeg)|![4차예시1_앙상블](https://user-images.githubusercontent.com/54520828/148635385-a73ad9bc-5f0c-4f9e-883e-31f74207ea07.jpeg)|
+|:--:|:--:|
+|예시1: Yolov5 적용|예시1: 앙상블 모델 적용|
+|![4차예시2_](https://user-images.githubusercontent.com/54520828/148635386-31d81aef-4258-4e76-b3f3-6e81a4a755e1.jpeg)|![4차예시2_앙상블](https://user-images.githubusercontent.com/54520828/148635387-f0f13539-f188-49eb-876b-5d3416028270.jpeg)|
+|예시2: Yolov5 적용|예시2: 앙상블 모델 적용|
+|![4차예시3_](https://user-images.githubusercontent.com/54520828/148635389-d466cecc-586e-49fb-8e8b-bde0a3688538.jpeg)|![4차예시3_앙상블](https://user-images.githubusercontent.com/54520828/148635392-aaba7fea-22f7-4789-b01a-053c8211a507.jpeg)|
+|예시3: Yolov5 적용|예시3: 앙상블 모델 적용|
+|![4차예시4_](https://user-images.githubusercontent.com/54520828/148635393-d8928b3f-a923-4bc7-90bd-d174318f6e31.png)|![4차예시4_앙상블](https://user-images.githubusercontent.com/54520828/148635394-fc465d55-a812-4468-87c2-2d99866a0309.png)|
+|예시4: Yolov5 적용|예시4: 앙상블 모델 적용|
+
+
 ### 4차 시도 결과 및 피드백
 
 - ‘car’만 12,000장 학습한 모델과 해당 데이터를 augmentation한 모델을 앙상블했을 때 결과가 상당히 좋음
