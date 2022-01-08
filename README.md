@@ -331,3 +331,5 @@ source_path = '/content/drive/MyDrive/socar_zones/'+z_name+'/'
 
 # 상세한 내용을 알기 원하신 분은 노션을 참조하시길 바랍니다.
 **[Team DI](https://lake-freeze-c95.notion.site/43b685385f8447da912f412bc3ba4447)**
+
+더 자세한 내용을 알고 싶으신 분들은 아래 댓글이나 alsrlrlrl417@gmail.com로 연락주세요.
