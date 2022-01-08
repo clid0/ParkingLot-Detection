@@ -303,13 +303,19 @@ source_path = '/content/drive/MyDrive/socar_zones/'+z_name+'/'
 !python img_to_db.py '{z_name}'
 ```
 
+- Colab : 코랩에서 사용한 대표 파일
+- yolov5 : Customize한 yolov5
+- templates : html & css
+- static : 사진 및 자료
+
 - models  
        - 2camera_260train.pt : 2번 카메라 모델  
        - 8camera_350train.pt : 8번 카메라 모델  
        - 9camera_350train.pt : 9번 카메라 모델  
        - person_detect.pt : COCO 10,000장 사람 모델  
-       - car_20ep.pt : COCO 12,000장 차 모델  
-       - car_aug_20ep.pt : augmentation COCO 12,000장 차 모델  
+       - car_detect_20ep.pt : COCO 12,000장 차 모델  
+       - car_detect_aug_20ep.pt : augmentation COCO 12,000장 차 모델  
+       - car_detect_aug2_30ep.pt : augmentation2 COCO 12,000장 차 모델  
 - blur  
        - utils.plots.py
 - put DB  
