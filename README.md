@@ -83,18 +83,16 @@
     
     - Federal University of Parana에서 공개한 오픈 데이터로 자유로운 활용이 가능
     - Yolo에서 필요한 labels의 자료가 있어 잘할 수 있을 것이라 판단
-
- |![PKlot이미지.jpg](https://user-images.githubusercontent.com/19771164/148506281-70aab702-af54-4465-b46f-bdd7454c616a.png)| 
- |:--:| 
- |*PKLot 데이터 예시*|    
-
+ 
+ |<img width="800px" height="400px" src="https://user-images.githubusercontent.com/19771164/148506281-70aab702-af54-4465-b46f-bdd7454c616a.png" alt="Sublime's custom image"/>|
+ |:--:|
+ |*PKLot 데이터 예시*|  
+ 
 - 학습 결과
 
- |![PKlot이미지.jpg](https://user-images.githubusercontent.com/19771164/148506719-c5d9d3f3-4175-47cc-b496-d6f5c8a52573.jpg)| 
+ |<img width="400px" height="400px" src="https://user-images.githubusercontent.com/19771164/148506719-c5d9d3f3-4175-47cc-b496-d6f5c8a52573.jpg" alt="Sublime's custom image"/>| 
  |:--:|
  |*학습 결과: 1='car' class*|
-
-
 
     
 ### 1차 시도의 결론 및 피드백
@@ -178,7 +176,7 @@
 2. 비슷한 각도라고 판단되는 8번 카메라 모델로 다른 주차장에서 아쉬운 결과를 보이는데,   차와 빈 자리를 논리적으로 찾는 것이 아니라 라벨링 되어있는 그 부분의 **지형지물**을 학습하는 것으로 보임.   차량의 방향도 중요하지만 그 주차장 고유의 상황이 더 중요함
 3. 그렇다면 데이터가 많이 부족한 상황에서 **어떤 기법**을 사용하는 것이 좋을까?
     
-|![8번카메라_testinference](https://user-images.githubusercontent.com/19771164/148531446-74dea4b5-4698-4046-a6cb-46cd63289fc1.png)|
+|![8번카메라_testinference](https://user-images.githubusercontent.com/54520828/148635624-e902c5d1-1ac4-4697-b7c0-4a5d677507a0.png)|
 |:--:|
 |8번 카메라에서 나온 데이터를 학습한 모델로 다른 주차장 예시에서의 inference|
     
@@ -219,7 +217,7 @@
 - 주차장을 학습하는 것이 가장 좋은 방법이지만 많은 자원(시간, 인력)이 필요로 하기 때문에 이를 해결하고 서비스 형태가 되기 위해서 바로 투입이 가능한 형태의 모델이 필요하다고 판단
 - 주차장의 지형지물이 아닌 car를 학습한 모델을 학습
 - COCO 데이터 12,000장 학습한 모델
-    - **[Microsoft COCO 2017 Datase](https://public.roboflow.com/object-detection/microsoft-coco-subset)t**
+    - **[Microsoft COCO 2017 Dataset](https://public.roboflow.com/object-detection/microsoft-coco-subset)**
         
         COCO Dataset(121,408장)에서 차가 존재하는 이미지만을 사용해서 12,000장의 이미지로 학습을 진행
 
