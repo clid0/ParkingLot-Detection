@@ -2,6 +2,13 @@
   <img src="https://user-images.githubusercontent.com/19771164/148502115-a99d69d5-c5ae-4d3b-be4c-88e2a8014fe9.png" alt="Sublime's custom image"/>
 </p>
 
+# 팀원
+- 전민기 - 리더
+- 이찬행
+- 최민혁
+- 박규선
+- 양지명
+
 # Team DI 주제
 
 ### “아니, 쏘카존에 반납하려니까 만석이라 다른 곳에 주차했더니 패널티라네요.”
