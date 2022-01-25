@@ -275,6 +275,35 @@ test 데이터(1,243장)
 
 ---
 <br><br>
+
+## 5차 시도(OpenCV)
+- 4차 결과 이후 딥러닝을 통한 주차장 detection이 결국 200장이 넘는 데이터와 라벨링의 필요함을 알게 되고, labeling등의 막대한 인권비가 듦
+- 보통 실내 주차장의 경우 자리 유무에 대한 '센서'가 존재
+-> 적은 비용으로 기존 주차장 카메라를 활용해서 센서를 대체할 수 없을까? <br>
+- Computer vision을 쉽게 할 수 있도록 도와주는 OpenCV를 활용해서 빈자리를 찾자
+
+
+|![opencv1](https://user-images.githubusercontent.com/19771164/150927523-b3214df8-e45e-4926-8efb-195da34697c0.png)|![ImageMedian](https://user-images.githubusercontent.com/19771164/150927635-1aa0db9c-fbad-416b-9613-82ff290b808a.png)|
+|:--:|:--:|
+|주차장 labeling|image에 Medianblur|
+|![ImageDilate](https://user-images.githubusercontent.com/19771164/150927640-dd69a5c9-6ff5-4dff-947e-095c6e5baa40.png)|![Image](https://user-images.githubusercontent.com/19771164/150927616-56d75f26-5b28-4b1f-bd0d-8b998dbbf0cf.png)|
+|image Dilate|결과물|
+
+1. 이미지에서 주차장 구역을 cv2.polylines를 활용해서 나눈 다각형의 좌표를 저장
+2. 이미지를 Grayscale로 전환한 후 Gaussianblur를 통해 이미지 윤곽선을 추출
+3. Medianblur를 이용해 윤곽선을 선명하게 설정
+4. Dilate를 통해 윤곽선 픽셀들을 3x3커널을 통해 확장
+5. 물체들이 black&white로 구분되고 black픽셀과 white pixel의 비율을 통해 빈자리를 추출 
+
+### 5차 시도 결과 및 피드백
+
+- 부족한 데이터 속에서 한 번의 라벨링과 OpenCV image 변환들을 통해서 주차장을 detection할 수 있음
+- 하지만 빛이 강하게 비친 부분이나 반사된 부분에서의 경계면이 생겨 해당 부분의 윤곽선의 한계가 존재
+- 실내 주차장이나 특이한 지형 지물에 대한 라벨링의 고민이 필요하고, 상황에 맞는 임계값을 주는 것이 중요할 것이라 판단
+- 딥러닝을 통한 주차장의 많은 자원이 드는 것을 OpenCV를 통해 어느 정도 해결해줄 수 있을 것이라 
+
+---
+<br><br>
 ## 결과물
 
 ### 웹사이트 구조
@@ -357,3 +386,6 @@ source_path = '/content/drive/MyDrive/socar_zones/'+z_name+'/'
 **[Team DI](https://lake-freeze-c95.notion.site/43b685385f8447da912f412bc3ba4447)**  <= notion 주소
 
 더 자세한 내용을 궁금하신 분들은 아래 댓글이나 alsrlrlrl417@gmail.com로 연락주세요.
+
+
+* 5차시도 (2022.01.19~)
