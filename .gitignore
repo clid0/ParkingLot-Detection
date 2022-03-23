@@ -2,3 +2,4 @@ static/*
 templates/
 *.html
 *.json
+app.py
